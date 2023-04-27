@@ -31,9 +31,7 @@
 
 # 📖 [PERSONAL PORTFOLIO] <a name="about-project"></a>
 
-> A "portfolio" HTML-5 & CSS3 repository built during the portal learning module.
-
-It is a show of my understanding of Gitflow, use of Linters, HTML5 semantics, CSS3 flexbox, grid and figma.
+This is a software developer protfolio project with the use of HTML5 semantics, CSS3 flexbox, grid, linters and figma.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -75,17 +73,19 @@ It is a show of my understanding of Gitflow, use of Linters, HTML5 semantics, CS
 
 ### Prerequisites
 
-- An IDE (Intergrated Development Environment ) such as vsode or atom  
+- An IDE (Intergrated Development Environment ) such as vsode or atom
 - A version control system such as git
-
 
 ### Setup
 
 1.  Clone the Repo with:
+
 ```
 git clone https://github.com/migo1/portfolio
 ```
+
 2. switch to the cloned directory
+
 ```
 cd portfolio
 ```
@@ -93,9 +93,11 @@ cd portfolio
 ### Installation
 
 1. Install the project with it's depenedcies
+
 ```
 npm install
 ```
+
 Then open the live server or open the `index.html` file with your browser
 
 ### Usage
@@ -108,7 +110,7 @@ To run tests, run the following command:
 
 - To run tests run :
 - npx hint .
-- npx stylelint "**/*.{css,scss}" 
+- npx stylelint "\*_/_.{css,scss}"
 
 <!-- AUTHORS -->
 
