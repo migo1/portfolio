@@ -164,7 +164,7 @@ Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page]()
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="https://github.com/migo1/portfolio/issues">back to top</a>)</p>
 
 <!-- SUPPORT -->
 
