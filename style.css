@@ -11,10 +11,10 @@
 body {
   background: #e5e5e5;
   height: auto;
+  font-family: "Poppins", sans-serif;
 }
 
 .container {
-  font-family: "Poppins", sans-serif;
   font-style: normal;
   background: #fff;
   border-bottom-left-radius: 100px;
@@ -59,7 +59,7 @@ header {
 .hero {
   width: 100%;
   height: auto;
-  background-image: url("../images/header-shapes-mobile.png");
+  background-image: url("./images/header-shapes-mobile.png");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -113,3 +113,149 @@ header {
   list-style-type: none;
   padding-bottom: 5rem;
 }
+
+.projects {
+  margin: 20% 6% 10% 6%;
+}
+.card {
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 16px;
+}
+
+.card-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+  margin-bottom: 7px;
+}
+.project-experience {
+  display: flex;
+  font-size: 13px;
+  align-content: start;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.first-list {
+  list-style: none;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #344563;
+}
+
+.other-list {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #7a869a;
+}
+
+.project-summary {
+  line-height: 24px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  color: #344563;
+  margin-bottom: 10px;
+}
+
+.projects .card {
+  margin-bottom: 35px;
+}
+
+.tech-stack {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.tech-stack li {
+  list-style: none;
+  padding: 4px 12px;
+  background: #ebebff;
+  color: #6070ff;
+  letter-spacing: 0.03em;
+  border-radius: 8px;
+}
+
+.btn-primary-outline {
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  padding: 12px;
+  background-color: transparent;
+  color: #396df2;
+  margin-top: 10px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.card > .image > img {
+  width: 100%;
+}
+
+.about {
+  background-color: #fff;
+  border-top-right-radius: 90px;
+  padding: 30% 20px 20px 20px;
+}
+
+.about-container .socials {
+  padding-bottom: 15px;
+}
+
+.about-container .connect {
+  margin-bottom: 10px;
+}
+
+.about-summary {
+  margin-bottom: 20px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* or 150% */
+
+  /* Neutrals/N600 */
+
+  color: #344563;
+}
+
+.languages {
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.languages-list {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.about-container .language-name li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #f7f7f9;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  gap: 20px;
+}
+
+hr {
+  border-color: #DFE1E6;
+}
+
