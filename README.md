@@ -110,7 +110,7 @@ To run tests, run the following command:
 
 - To run tests run :
 - npx hint .
-- npx stylelint "\*_/_.{css,scss}"
+- npx stylelint "**/*.{css,scss}"
 
 <!-- AUTHORS -->
 
