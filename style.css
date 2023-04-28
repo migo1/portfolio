@@ -117,6 +117,7 @@ header {
 .projects {
   margin: 20% 6% 10% 6%;
 }
+
 .card {
   background-color: #fff;
   border-radius: 16px;
@@ -131,6 +132,7 @@ header {
   color: #172b4d;
   margin-bottom: 7px;
 }
+
 .project-experience {
   display: flex;
   font-size: 13px;
@@ -220,10 +222,6 @@ header {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  /* or 150% */
-
-  /* Neutrals/N600 */
-
   color: #344563;
 }
 
@@ -241,7 +239,7 @@ header {
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
-  color: #000000;
+  color: #000;
 }
 
 .about-container .language-name li {
@@ -256,6 +254,5 @@ header {
 }
 
 hr {
-  border-color: #DFE1E6;
+  border-color: #dfe1e6;
 }
-
