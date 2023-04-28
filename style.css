@@ -116,12 +116,16 @@ header {
 
 .projects {
   margin: 20% 6% 10% 6%;
+  display: grid;
+  grid-template-columns: auto;
 }
 
 .card {
   background-color: #fff;
   border-radius: 16px;
   padding: 16px;
+  display: flex;
+  flex-direction: column;
 }
 
 .card-title {
@@ -255,4 +259,18 @@ header {
 
 hr {
   border-color: #dfe1e6;
+}
+
+.btn-primary-outline:hover {
+  color: #fff;
+  background-color: #6070ff;
+  transition: 1s ease-in-out;
+}
+
+.about-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  margin-bottom: 20px;
 }
