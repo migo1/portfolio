@@ -176,9 +176,10 @@ header {
 }
 
 .tech-stack {
-  display: flex;
+  /* display: flex; */
   gap: 10px;
   margin-bottom: 10px;
+  display: inline-block;
 }
 
 .tech-stack li {
@@ -188,6 +189,8 @@ header {
   color: #6070ff;
   letter-spacing: 0.03em;
   border-radius: 8px;
+  float: left;
+  margin: 8px;
 }
 
 .btn-primary-outline {
