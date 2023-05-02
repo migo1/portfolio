@@ -280,6 +280,12 @@ hr {
   transition: 1s ease-in-out;
 }
 
+.btn-primary-outline-inverse:hover {
+  color: #fff;
+  background-color: #6070ff;
+  transition: 1s ease-in-out;
+}
+
 .about-title {
   font-style: normal;
   font-weight: 700;
