@@ -277,10 +277,10 @@
       <h2>Contact Me</h2>
       <p>If you have an application you are interested in
        developing, a feature that you need built or a project that needs coding. I’d love to help with it!</p>
-      <form action="" method="POST">
-          <input type="text" placeholder="Full name">
-          <input type="email" placeholder="Email address">
-          <textarea name="message" id="" cols="30" rows="10" placeholder="Write your message here..."></textarea>
+      <form action="https://formspree.io/f/xzbqorbk" method="POST">
+          <input type="text" name="name" placeholder="Full name" maxlength="30" required>
+          <input type="email" name="email" placeholder="Email address" required>
+          <textarea name="message" name="message" id="" cols="30" rows="10" placeholder="Write your message here..." maxlength="500" required></textarea>
           <input type="Submit" value="Get in touch">
       </form>
   </section>
