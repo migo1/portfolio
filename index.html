@@ -268,8 +268,50 @@
             />
           </svg>
         </div>
-        <hr>
+        <hr />
       </div>
     </section>
+
+    <!-- contact Me form -->
+    <div class="contact">
+      <img class="contact-image" src="images/contact-form-mobile.png" alt="" />
+      <section class="contact-form">
+        <h2 class="contact-heading">Contact Me</h2>
+        <p class="contact-text">
+          If you have an application you are interested in developing, a feature
+          that you need built or a project that needs coding. I’d love to help
+          with it!
+        </p>
+        <form action="https://formspree.io/f/xzbqorbk" method="POST">
+          <input
+            class="form-input"
+            type="text"
+            name="name"
+            placeholder="Full name"
+            maxlength="30"
+            required
+          />
+          <input
+            class="form-input"
+            type="email"
+            name="email"
+            placeholder="Email address"
+            required
+          />
+          <textarea
+            class="form-input"
+            name="message"
+            cols="20"
+            rows="10"
+            placeholder="Write your message here..."
+            maxlength="500"
+            required
+          ></textarea>
+          <button class="btn-primary-outline-inverse" type="Submit">
+            Get in touch
+          </button>
+        </form>
+      </section>
+    </div>
   </body>
 </html>
