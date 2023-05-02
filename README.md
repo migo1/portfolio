@@ -122,6 +122,12 @@ To run tests, run the following command:
 - Twitter: (https://twitter.com/@ert49554392)
 - LinkedIn: (https://www.linkedin.com/in/robert-m-3b3b1116a/)
 
+👤 **Author2**
+
+- GitHub: (https://github.com/aamir-asaram)
+- Twitter: (https://twitter.com/aaaaamir_)
+- LinkedIn: (https://www.linkedin.com/in/aamir-asaram-089802213/)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
