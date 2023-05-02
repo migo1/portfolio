@@ -116,13 +116,13 @@ To run tests, run the following command:
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **Author1**
+👤 **Robert Migot**
 
 - GitHub: (https://github.com/migo1)
 - Twitter: (https://twitter.com/@ert49554392)
 - LinkedIn: (https://www.linkedin.com/in/robert-m-3b3b1116a/)
 
-👤 **Author2**
+👤 **Aamir Asaram**
 
 - GitHub: (https://github.com/aamir-asaram)
 - Twitter: (https://twitter.com/aaaaamir_)
