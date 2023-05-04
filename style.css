@@ -34,10 +34,14 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 90%;
+  width: 100%;
   margin: 1em auto;
   margin-top: 0;
   padding-top: 16px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  background: #fff;
 }
 
 .hamburger {
@@ -46,6 +50,10 @@ header {
   gap: 2px;
   padding-right: 0.2em;
   cursor: pointer;
+}
+
+.header-nav {
+  display: none;
 }
 
 .vector {
@@ -112,6 +120,85 @@ header {
   cursor: pointer;
   list-style-type: none;
   padding-bottom: 5rem;
+}
+
+/* Media Query for desktop screens on the hero section */
+
+@media (min-width: 768px) {
+  header {
+    margin-bottom: 0;
+    padding-bottom: 1%;
+    padding-left: 10%;
+    padding-right: 10%;
+    position: fixed;
+  }
+
+  header::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .hero + header::after {
+    opacity: 1;
+  }
+
+  .content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    width: 50%;
+  }
+
+  .header-nav {
+    display: flex;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .hero {
+    padding-left: 20px;
+    padding-right: 10px;
+    background-image: url("./images/desktop/desk-header.png");
+    background-repeat: no-repeat;
+    background-size: calc(100% - 1%) calc(100% - 16%);
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    height: 90vh;
+  }
+
+  .introduction {
+    width: 60%;
+    font-size: 48px;
+    line-height: 60px;
+  }
+
+  .description {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .item-nav {
+    list-style: none;
+    margin-right: 30px;
+    color: #344563;
+  }
+
+  .hamburger {
+    display: none;
+  }
 }
 
 .projects {
@@ -219,6 +306,95 @@ header {
   width: 100%;
 }
 
+/* Desktop project version */
+
+@media (min-width: 768px) {
+  .projects {
+    margin: 10% 10% 5% 10%;
+    display: grid;
+    grid-template-columns: auto;
+  }
+
+  .card {
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 16px;
+    display: flex;
+    flex-direction: row;
+    transition: all 0.3s ease;
+  }
+
+  .projects .card {
+    margin-bottom: 8%;
+  }
+
+  .card:hover {
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 2px solid #a7aeff;
+  }
+
+  .card .image {
+    width: 50%;
+  }
+
+  .card-image {
+    margin-right: 20px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .card-content {
+    margin-left: 20px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+  }
+
+  .card-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    color: #091e42;
+    margin-bottom: 20px;
+  }
+
+  .project-experience {
+    margin-bottom: 20px;
+  }
+
+  .first-list {
+    color: #344563;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .other-list {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .project-summary {
+    font-size: 17px;
+    margin-bottom: 20px;
+  }
+
+  .tech-stack {
+    gap: 8px;
+    margin-bottom: 20px;
+  }
+
+  .card-inverse {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+
 .about {
   background-color: #fff;
   border-top-right-radius: 90px;
@@ -294,6 +470,72 @@ hr {
   margin-bottom: 20px;
 }
 
+@media (min-width: 768px) {
+  .about {
+    padding: 9% 5px 200px 10%;
+  }
+
+  .about-container {
+    display: flex;
+  }
+
+  .about-left {
+    width: 40%;
+    gap: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .about-title {
+    margin-bottom: 0;
+  }
+
+  .about-summary {
+    margin-bottom: 0;
+  }
+
+  .about-container .connect {
+    margin-bottom: 0;
+  }
+
+  .about-container .socials {
+    padding-bottom: 0;
+  }
+
+  .about-right {
+    width: 60%;
+    margin-left: 24px;
+  }
+
+  .languages {
+    margin-top: 17px;
+  }
+
+  .language-name {
+    display: flex;
+  }
+
+  .about-container .language-name li {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 10px;
+    background-color: #f7f7f9;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    border-radius: 8px;
+    gap: 20px;
+    height: 124px;
+    width: 112px;
+  }
+
+  .about hr {
+    width: 90%;
+  }
+}
+
 .contact {
   background: #fff;
   position: relative;
@@ -311,9 +553,15 @@ hr {
 .contact-image {
   position: absolute;
   width: 58%;
-  height: calc(100% - 36px);
+  height: calc(100% - 20px);
   right: 0;
   top: 20px;
+}
+
+@media (max-width: 767px) {
+  .desktop-contact-image {
+    display: none;
+  }
 }
 
 .contact-heading {
@@ -354,4 +602,47 @@ input::placeholder {
 
 textarea::placeholder {
   font-family: "Poppins", sans-serif;
+}
+
+@media (min-width: 768px) {
+  .contact {
+    position: relative;
+  }
+
+  .desktop-contact-image {
+    position: absolute;
+    width: calc(100% - 6%);
+    height: calc(100% - 40px);
+    right: 50px;
+    top: 40px;
+  }
+
+  .contact-form {
+    padding: 0% 21% 4% 21%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-heading {
+    margin-top: 16%;
+  }
+
+  .contact-text {
+    padding-left: 26%;
+    padding-right: 26%;
+  }
+
+  .form-input {
+    border-radius: 2px;
+  }
+
+  .contact-button {
+    display: flex;
+    justify-content: center;
+  }
+
+  .contact-image {
+    display: none;
+  }
 }

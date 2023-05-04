@@ -9,7 +9,8 @@
   </head>
   <body>
     <div class="container">
-      <header>
+      <!-- <div class="header-container"> -->
+      <header class="navbar">
         <a href="#" class="header-title">My Logo</a>
         <nav>
           <ul class="hamburger">
@@ -17,11 +18,17 @@
             <li class="vector"></li>
             <li class="vector"></li>
           </ul>
+          <ul class="header-nav">
+            <li class="item-nav">Portfolio</li>
+            <li class="item-nav">About</li>
+            <li class="item-nav">Contact</li>
+          </ul>
         </nav>
       </header>
+      <!-- </div> -->
       <section class="hero">
         <div class="content">
-          <h1 class="introduction">I’m Migot Glad to see you!</h1>
+          <h1 class="introduction">I’m Migot. Glad to see you!</h1>
           <p class="description">
             I’m a software developer! I can help you build a product , feature
             or website Look through some of my work and experience! If you like
@@ -64,7 +71,19 @@
     <section class="projects">
       <div class="card">
         <div class="image">
-          <img src="images/work1.png" alt="first project" />
+          <picture>
+            <source media="(max-width: 767px)" srcset="images/work1.png" />
+            <source
+              media="(min-width: 768px)"
+              srcset="images/desktop/work1.png"
+            />
+            <!-- <img src="./images/desktop-image.jpg" alt="Image description" /> -->
+            <img
+              class="card-image"
+              src="images/work1.png"
+              alt="mobile work1 image"
+            />
+          </picture>
         </div>
 
         <div class="card-content">
@@ -87,13 +106,25 @@
         </div>
       </div>
 
-      <div class="card">
+      <div class="card card-inverse">
         <div class="image">
-          <img src="images/work2.png" alt="second project" />
+          <picture>
+            <source media="(max-width: 767px)" srcset="images/work2.png" />
+            <source
+              media="(min-width: 768px)"
+              srcset="images/desktop/work2.png"
+            />
+            <!-- <img src="./images/desktop-image.jpg" alt="Image description" /> -->
+            <img
+              class="card-image"
+              src="images/work2.png"
+              alt="mobile work2 image"
+            />
+          </picture>
         </div>
 
         <div class="card-content">
-          <h3 class="card-title"></h3>
+          <h3 class="card-title">Multi-Post Stories</h3>
           <ul class="project-experience">
             <li class="first-list">CANOPY</li>
             <li class="other-list"><span></span>Full Stack Dev</li>
@@ -118,7 +149,7 @@
         </div>
 
         <div class="card-content">
-          <h3 class="card-title"></h3>
+          <h3 class="card-title">Facebook 360</h3>
           <ul class="project-experience">
             <li class="first-list">CANOPY</li>
             <li class="other-list"><span></span>Full Stack Dev</li>
@@ -137,13 +168,13 @@
         </div>
       </div>
 
-      <div class="card">
+      <div class="card card-inverse">
         <div class="image">
           <img src="images/work4.png" alt="fourth project" />
         </div>
 
         <div class="card-content">
-          <h3 class="card-title"></h3>
+          <h3 class="card-title">Uber Navigation</h3>
           <ul class="project-experience">
             <li class="first-list">CANOPY</li>
             <li class="other-list"><span></span>Full Stack Dev</li>
@@ -166,115 +197,120 @@
     <!-- About -->
     <section class="about">
       <div class="about-container">
-        <h2 class="about-title">About Myself</h2>
-        <p class="about-summary">
-          Hello I'm a software developer! I can help you build a product ,
-          feature or website Look through some of my work and experience! If you
-          like what you see and have a project you need coded, don't hestiate to
-          contact me.
-        </p>
-        <h3 class="connect">LET'S CONNECT</h3>
-        <ul class="socials">
-          <li class="icon">
-            <a href="#"
-              ><img src="images/social-icons/Twitter.png" alt="Twitter"
-            /></a>
-          </li>
-          <li class="icon">
-            <a href="#"
-              ><img src="images/social-icons//Linkedin.png" alt="LinkedIn"
-            /></a>
-          </li>
-          <li class="icon">
-            <a href="#"
-              ><img src="images/social-icons//Medium.png" alt="Medium"
-            /></a>
-          </li>
-          <li class="icon">
-            <a href="#"
-              ><img src="images/social-icons//Github.png" alt="GitHub"
-            /></a>
-          </li>
-          <li class="icon">
-            <a href="#"
-              ><img src="images/social-icons//AngelList.png" alt="AngelList"
-            /></a>
-          </li>
-        </ul>
-        <button class="btn-primary-outline">Get my resume</button>
-        <div class="languages">
-          <p class="languages-list">Languages</p>
-          <svg
-            width="14"
-            height="8"
-            viewBox="0 0 14 8"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M0.292893 0.292893C0.683417 -0.0976311 1.31658 -0.0976311 1.70711 0.292893L7 5.58579L12.2929 0.292893C12.6834 -0.0976311 13.3166 -0.0976311 13.7071 0.292893C14.0976 0.683417 14.0976 1.31658 13.7071 1.70711L7.70711 7.70711C7.31658 8.09763 6.68342 8.09763 6.29289 7.70711L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683417 0.292893 0.292893Z"
-              fill="#5E6C84"
-            />
-          </svg>
+        <div class="about-left">
+          <h2 class="about-title">About Myself</h2>
+          <p class="about-summary">
+            Hello I'm a software developer! I can help you build a product ,
+            feature or website Look through some of my work and experience! If
+            you like what you see and have a project you need coded, don't
+            hestiate to contact me.
+          </p>
+          <h3 class="connect">LET'S CONNECT</h3>
+          <ul class="socials">
+            <li class="icon">
+              <a href="#"
+                ><img src="images/social-icons/Twitter.png" alt="Twitter"
+              /></a>
+            </li>
+            <li class="icon">
+              <a href="#"
+                ><img src="images/social-icons//Linkedin.png" alt="LinkedIn"
+              /></a>
+            </li>
+            <li class="icon">
+              <a href="#"
+                ><img src="images/social-icons//Medium.png" alt="Medium"
+              /></a>
+            </li>
+            <li class="icon">
+              <a href="#"
+                ><img src="images/social-icons//Github.png" alt="GitHub"
+              /></a>
+            </li>
+            <li class="icon">
+              <a href="#"
+                ><img src="images/social-icons//AngelList.png" alt="AngelList"
+              /></a>
+            </li>
+          </ul>
+          <button class="btn-primary-outline">Get my resume</button>
         </div>
-        <ul class="language-name">
-          <li>
-            <img src="images/js.png" alt="javaScript" />
-            <p>javaScript</p>
-          </li>
-          <li>
-            <img src="images/html.png" alt="html" />
-            <p>HTML</p>
-          </li>
-          <li>
-            <img src="images/css.png" alt="css" />
-            <p>CSS</p>
-          </li>
-        </ul>
-        <div class="languages">
-          <p class="languages-list">Frameworks</p>
-          <svg
-            width="8"
-            height="15"
-            viewBox="0 0 8 15"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M0.292893 0.439622C0.683417 0.0490974 1.31658 0.0490974 1.70711 0.439622L7.70711 6.43962C8.09763 6.83015 8.09763 7.46331 7.70711 7.85384L1.70711 13.8538C1.31658 14.2444 0.683417 14.2444 0.292893 13.8538C-0.0976311 13.4633 -0.0976311 12.8301 0.292893 12.4396L5.58579 7.14673L0.292893 1.85384C-0.0976311 1.46331 -0.0976311 0.830146 0.292893 0.439622Z"
-              fill="#505F79"
-            />
-          </svg>
+        <div class="about-right">
+          <div class="languages">
+            <p class="languages-list">Languages</p>
+            <svg
+              width="14"
+              height="8"
+              viewBox="0 0 14 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M0.292893 0.292893C0.683417 -0.0976311 1.31658 -0.0976311 1.70711 0.292893L7 5.58579L12.2929 0.292893C12.6834 -0.0976311 13.3166 -0.0976311 13.7071 0.292893C14.0976 0.683417 14.0976 1.31658 13.7071 1.70711L7.70711 7.70711C7.31658 8.09763 6.68342 8.09763 6.29289 7.70711L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683417 0.292893 0.292893Z"
+                fill="#5E6C84"
+              />
+            </svg>
+          </div>
+          <ul class="language-name">
+            <li>
+              <img src="images/js.png" alt="javaScript" />
+              <p>javaScript</p>
+            </li>
+            <li>
+              <img src="images/html.png" alt="html" />
+              <p>HTML</p>
+            </li>
+            <li>
+              <img src="images/css.png" alt="css" />
+              <p>CSS</p>
+            </li>
+          </ul>
+          <div class="languages">
+            <p class="languages-list">Frameworks</p>
+            <svg
+              width="8"
+              height="15"
+              viewBox="0 0 8 15"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M0.292893 0.439622C0.683417 0.0490974 1.31658 0.0490974 1.70711 0.439622L7.70711 6.43962C8.09763 6.83015 8.09763 7.46331 7.70711 7.85384L1.70711 13.8538C1.31658 14.2444 0.683417 14.2444 0.292893 13.8538C-0.0976311 13.4633 -0.0976311 12.8301 0.292893 12.4396L5.58579 7.14673L0.292893 1.85384C-0.0976311 1.46331 -0.0976311 0.830146 0.292893 0.439622Z"
+                fill="#505F79"
+              />
+            </svg>
+          </div>
+          <hr />
+          <div class="languages">
+            <p class="languages-list">Skills</p>
+            <svg
+              width="8"
+              height="15"
+              viewBox="0 0 8 15"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M0.292893 0.439622C0.683417 0.0490974 1.31658 0.0490974 1.70711 0.439622L7.70711 6.43962C8.09763 6.83015 8.09763 7.46331 7.70711 7.85384L1.70711 13.8538C1.31658 14.2444 0.683417 14.2444 0.292893 13.8538C-0.0976311 13.4633 -0.0976311 12.8301 0.292893 12.4396L5.58579 7.14673L0.292893 1.85384C-0.0976311 1.46331 -0.0976311 0.830146 0.292893 0.439622Z"
+                fill="#505F79"
+              />
+            </svg>
+          </div>
+          <hr />
         </div>
-        <hr />
-        <div class="languages">
-          <p class="languages-list">Skills</p>
-          <svg
-            width="8"
-            height="15"
-            viewBox="0 0 8 15"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M0.292893 0.439622C0.683417 0.0490974 1.31658 0.0490974 1.70711 0.439622L7.70711 6.43962C8.09763 6.83015 8.09763 7.46331 7.70711 7.85384L1.70711 13.8538C1.31658 14.2444 0.683417 14.2444 0.292893 13.8538C-0.0976311 13.4633 -0.0976311 12.8301 0.292893 12.4396L5.58579 7.14673L0.292893 1.85384C-0.0976311 1.46331 -0.0976311 0.830146 0.292893 0.439622Z"
-              fill="#505F79"
-            />
-          </svg>
-        </div>
-        <hr />
       </div>
     </section>
 
     <!-- contact Me form -->
     <div class="contact">
       <img class="contact-image" src="images/contact-form-mobile.png" alt="" />
+      <img class="desktop-contact-image" src="images/desktop/contactBackground.png" alt="">
       <section class="contact-form">
         <h2 class="contact-heading">Contact Me</h2>
         <p class="contact-text">
@@ -282,7 +318,7 @@
           that you need built or a project that needs coding. I’d love to help
           with it!
         </p>
-        <form action="https://formspree.io/f/xzbqorbk" method="POST">
+        <form action="https://formspree.io/f/xzbqorbk" method="POST" class="contact-form">
           <input
             class="form-input"
             type="text"
@@ -307,9 +343,11 @@
             maxlength="500"
             required
           ></textarea>
-          <button class="btn-primary-outline-inverse" type="Submit">
-            Get in touch
-          </button>
+          <div class="contact-button">
+            <button class="btn-primary-outline-inverse" type="Submit">
+              Get in touch
+            </button>
+          </div>
         </form>
       </section>
     </div>
