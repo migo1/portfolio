@@ -180,7 +180,14 @@ header {
   }
 
   .introduction {
-    width: 51%;
+    width: 60%;
+    font-size: 48px;
+    line-height: 60px;
+  }
+
+  .description {
+    font-size: 20px;
+    line-height: 28px;
   }
 
   .item-nav {
