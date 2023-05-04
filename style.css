@@ -38,7 +38,6 @@ header {
   margin: 1em auto;
   margin-top: 0;
   padding-top: 16px;
-  /* position: fixed; */
   padding-right: 20px;
   padding-left: 20px;
   padding-bottom: 10px;
@@ -123,7 +122,7 @@ header {
   padding-bottom: 5rem;
 }
 
-/* Media Query for desktop screens on the hero section*/
+/* Media Query for desktop screens on the hero section */
 
 @media (min-width: 768px) {
   header {
@@ -134,7 +133,7 @@ header {
     position: fixed;
   }
 
-  header:after {
+  header::after {
     content: "";
     display: block;
     position: absolute;
@@ -147,7 +146,7 @@ header {
     transition: opacity 0.3s ease-in-out;
   }
 
-  .hero + header:after {
+  .hero + header::after {
     opacity: 1;
   }
 
@@ -169,12 +168,10 @@ header {
   }
 
   .hero {
-    /* margin-top: 60px; */
     padding-left: 20px;
     padding-right: 10px;
     background-image: url("./images/desktop/desk-header.png");
     background-repeat: no-repeat;
-    /* background-size: calc(100% - 9%) calc(100% - 15%); */
     background-size: calc(100% - 1%) calc(100% - 16%);
     background-position: center center;
     display: flex;
@@ -310,9 +307,7 @@ header {
     display: grid;
     grid-template-columns: auto;
   }
-  .projects .card {
-    margin-bottom: 8%;
-  }
+
   .card {
     background-color: #fff;
     border-radius: 16px;
@@ -322,15 +317,14 @@ header {
     transition: all 0.3s ease;
   }
 
-  .card:hover {
-    cursor: pointer;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    border: 2px solid #a7aeff;
+  .projects .card {
+    margin-bottom: 8%;
   }
 
-  .card-content {
-    margin-left: 20px;
-    width: 50%;
+  .card:hover {
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 2px solid #a7aeff;
   }
 
   .card .image {
@@ -344,6 +338,7 @@ header {
   }
 
   .card-content {
+    margin-left: 20px;
     padding: 24px;
     display: flex;
     flex-direction: column;
@@ -498,7 +493,7 @@ hr {
   }
 
   .about-container .socials {
-    padding-bottom: 0px;
+    padding-bottom: 0;
   }
 
   .about-right {
@@ -551,7 +546,7 @@ hr {
 .contact-image {
   position: absolute;
   width: 58%;
-  height: calc(100% - 36px);
+  height: calc(100% - 20px);
   right: 0;
   top: 20px;
 }
@@ -616,8 +611,7 @@ textarea::placeholder {
   }
 
   .contact-form {
-    padding-left: 30%;
-    padding-right: 30%;
+    padding: 0% 21% 4% 21%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -630,10 +624,6 @@ textarea::placeholder {
   .contact-text {
     padding-left: 26%;
     padding-right: 26%;
-  }
-
-  .contact-form {
-    padding: 0% 21% 4% 21%;
   }
 
   .form-input {
