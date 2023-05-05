@@ -183,8 +183,21 @@ header {
     width: 60%;
     font-size: 48px;
     line-height: 60px;
+    animation: slow-show-up 5s forwards;
   }
 
+  @keyframes slow-show-up {
+
+    0% {
+      opacity: 0;
+    }
+
+    100%{
+      opacity: 1;
+    }
+    
+  }
+  
   .description {
     font-size: 20px;
     line-height: 28px;
