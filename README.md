@@ -116,7 +116,7 @@ To run tests, run the following command:
 ### Deployment
 
 - Project is deployed using [GitHub Pages](https://pages.github.com/)
-- [🚀 Live Demo Link ](#live-demo)
+- <a href="https://migo1.github.io/portfolio/">[🚀 Live Demo Link ] </a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- AUTHORS -->
