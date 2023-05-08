@@ -112,6 +112,13 @@ To run tests, run the following command:
 - npx hint .
 - npx stylelint "**/*.{css,scss}"
 
+<!-- Deployment -->
+### Deployment
+
+- Project is deployed using [GitHub Pages](https://pages.github.com/)
+- <a href="https://migo1.github.io/portfolio/">[🚀 Live Demo Link ] </a>
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
