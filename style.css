@@ -550,6 +550,7 @@ hr {
   padding-top: 110px;
   padding-left: 20px;
   padding-right: 20px;
+  z-index: 1;
 }
 
 .contact-image {
@@ -624,6 +625,7 @@ textarea::placeholder {
     display: flex;
     flex-direction: column;
     align-items: center;
+    z-index: 1;
   }
 
   .contact-heading {
