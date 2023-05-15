@@ -17,14 +17,29 @@
             <li class="vector"></li>
             <li class="vector"></li>
           </ul>
+          <!-- <div class="mobile-menu">
+            
+          </div> -->
+
           <ul class="header-nav">
-            <li class="item-nav">Portfolio</li>
-            <li class="item-nav">About</li>
-            <li class="item-nav">Contact</li>
+            <li class="item-nav"><a href="#hero"> Home </a></li>
+            <li class="item-nav"><a href="#projects"> Portfolio </a></li>
+            <li class="item-nav"><a href="#about"> About </a></li>
+            <li class="item-nav"><a href="#contact"> Contact </a></li>
+          </ul>
+        </nav>
+
+        <nav class="mobile-nav">
+          <img class="mobile-cancel" src="images/Icon - Cancel.png" alt="" />
+          <ul class="mobile-nav-list">
+            <li class="mobile-item-nav"><a href="#hero">Home</a></li>
+            <li class="mobile-item-nav"><a href="#projects">Portfolio</a></li>
+            <li class="mobile-item-nav"><a href="#about">About</a></li>
+            <li class="mobile-item-nav"><a href="#contact">Contact</a></li>
           </ul>
         </nav>
       </header>
-      <section class="hero">
+      <section class="hero" id="hero">
         <div class="content">
           <h1 class="introduction">I’m Migot. Glad to see you!</h1>
           <p class="description">
@@ -66,7 +81,7 @@
     </div>
     <!-- projects -->
 
-    <section class="projects">
+    <section class="projects" id="projects">
       <div class="card">
         <div class="image">
           <picture>
@@ -186,7 +201,7 @@
       </div>
     </section>
     <!-- About -->
-    <section class="about">
+    <section class="about" id="about">
       <div class="about-container">
         <div class="about-left">
           <h2 class="about-title">About Myself</h2>
@@ -299,7 +314,7 @@
     </section>
 
     <!-- contact Me form -->
-    <div class="contact">
+    <div class="contact" id="contact">
       <img class="contact-image" src="images/contact-form-mobile.png" alt="" />
       <img
         class="desktop-contact-image"
@@ -350,5 +365,6 @@
         </form>
       </section>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>

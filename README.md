@@ -111,6 +111,7 @@ To run tests, run the following command:
 - To run tests run :
 - npx hint .
 - npx stylelint "**/*.{css,scss}"
+- npx eslint . 
 
 <!-- Deployment -->
 ### Deployment
