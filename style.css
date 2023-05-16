@@ -381,7 +381,8 @@ header {
   display: flex;
   flex-direction: column;
   padding: 0 3.5%;
-  /* height: 100vh; */
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
 }
 
 .mobile-modal-header {
@@ -564,6 +565,121 @@ header {
     display: flex;
     flex-direction: row-reverse;
   }
+
+  /* Desktop project modal */
+
+.project-modal {
+  margin: 2% 5%;
+  display: flex;
+  flex-direction: column;
+  padding: 1% 2%;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+}
+
+.mobile-modal-header {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1%;
+}
+
+.modal-mobile-heading {
+  line-height: 22px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+}
+
+.mobile-modal-icon {
+  top: 0;
+}
+
+.m-modal-tech {
+  display: flex;
+  margin: 4% 0 15px 0;
+}
+
+.m-modal-tech-list {
+  list-style: none;
+  margin-right: 10px;
+}
+
+.m-modal-image {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 4%;
+}
+
+.modal-content {
+  display: flex;
+  width: 100%;
+}
+
+.m-modal-desc {
+  margin-bottom: 3%;
+  margin-bottom: 4%;
+  color: #344563;
+  font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 30px;
+  width: 80%;
+}
+
+.modal-right-content {
+  width: 20%;
+  margin-left:4%;
+}
+
+.m-modal-lang {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 4%;
+}
+
+.m-lang-list {
+  list-style: none;
+  margin-right: 2%;
+  padding: 3px 12px;
+  background-color: #ebebff;
+  color: #6070ff;
+  border-radius: 8px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.m-modal-links {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 4%;
+}
+
+.m-modal-btn {
+  border: 1px solid #6070ff;
+  background: transparent;
+  padding: 9px 25px;
+  color: #396df2;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 500;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  display: flex;
+}
+
+.m-modal-icon {
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+}
+
 }
 
 .about {
