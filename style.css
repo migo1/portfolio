@@ -332,6 +332,7 @@ header {
   display: flex;
   gap: 10px;
   margin-bottom: 10px;
+  /* overflow-x: hidden; */
 }
 
 .tech-stack li {

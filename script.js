@@ -51,13 +51,38 @@ for (let i = 0; i < projectData.length; i += 1) {
   cardContent.classList.add('card-content');
   const cardTitle = document.createElement('h3');
   cardTitle.classList.add('card-title');
-  cardTitle.innerText = projectData[i].title;
+  cardTitle.innerText = projectData[i].name;
   const projectExperience = document.createElement('ul');
   projectExperience.classList.add('project-experience');
-  for (let j = 0; j < project[i].project_experience.length; i += 1) {
-    if (project[i].project_experience[0]) {
-      const firstList
+  for (let j = 0; j < projectData[i].project_experience.length; j += 1) {
+    const listItem = document.createElement('li');
+    if (j === 0) {
+      listItem.classList.add('first-list');
+      listItem.textContent = projectData[i].project_experience[j];
+    } else {
+      listItem.classList.add('other-list');
+      listItem.textContent = projectData[i].project_experience[j];
     }
+    projectExperience.appendChild(listItem);
   }
+  const projectSummary = document.createElement('p');
+  projectSummary.classList.add('project-summary');
+  projectSummary.innerText = projectData[i].summary;
+  const teckStack = document.createElement('ul');
+  teckStack.classList.add('tech-stack');
+  for (let k = 0; k < projectData[i].tech_stack.length; k += 1) {
+    const teckList = document.createElement('li');
+    teckList.innerText = projectData[i].tech_stack[k];
+    teckStack.appendChild(teckList);
+  }
+  const button = document.createElement('button');
+  button.classList.add('btn-primary-outline');
+  button.innerText = 'See Project';
+  cardContent.appendChild(cardTitle);
+  cardContent.appendChild(projectExperience);
+  cardContent.appendChild(projectSummary);
+  cardContent.appendChild(teckStack);
+  cardContent.appendChild(button);
+  cardDiv.appendChild(cardContent);
   project.appendChild(cardDiv);
 }
