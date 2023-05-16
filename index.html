@@ -82,7 +82,7 @@
     <!-- projects -->
 
     <section class="projects" id="projects">
-      <div class="card">
+      <!-- <div class="card">
         <div class="image">
           <picture>
             <source media="(max-width: 767px)" srcset="images/work1.png" />
@@ -177,7 +177,14 @@
 
       <div class="card card-inverse">
         <div class="image">
-          <img src="images/work4.png" alt="fourth project" />
+             <picture>
+            <source media="(max-width: 767px)" srcset="images/work4.png" />
+            <source
+              media="(min-width: 768px)"
+              srcset="images/desktop/work4.png"
+            />
+            <img src="images/work4.png" alt="mobile work2 image" />
+          </picture>
         </div>
 
         <div class="card-content">
@@ -198,7 +205,7 @@
           </ul>
           <button class="btn-primary-outline">See project</button>
         </div>
-      </div>
+      </div> -->
     </section>
     <!-- About -->
     <section class="about" id="about">
@@ -365,6 +372,6 @@
         </form>
       </section>
     </div>
-    <script src="script.js"></script>
+    <script type="module" src="./script.js"></script>
   </body>
 </html>
