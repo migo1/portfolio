@@ -242,6 +242,16 @@ for (let i = 0; i < projectData.length; i += 1) {
   cardDiv.appendChild(cardContent);
   project.appendChild(cardDiv);
 }
-
+// query the form
 const form = document.querySelector('.contact-form');
+// query the input field email that can be validated
 const emailInput = document.querySelector('#email');
+
+const errorMessage = document.querySelector('.email-error-message');
+
+form.addEventListener('submit', (e) => {
+  if (emailInput.value.toLowerCase() !== emailInput.value) {
+    e.preventDefault();
+    errorMessage.style.display = 'block';
+  }
+});

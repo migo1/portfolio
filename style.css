@@ -25,6 +25,11 @@ body {
   padding-bottom: 30px;
 }
 
+.email-error-message {
+  color: red;
+  display: none;
+}
+
 .header-title {
   text-decoration: none;
   font-weight: 700;
@@ -861,6 +866,7 @@ hr {
   height: calc(100% - 20px);
   right: 0;
   top: 20px;
+  z-index: 0;
 }
 
 @media (max-width: 767px) {
