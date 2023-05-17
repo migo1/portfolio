@@ -89,7 +89,7 @@ for (let i = 0; i < projectData.length; i += 1) {
     modalHeading.innerText = projectData[i].name;
     const modalCloseButton = document.createElement('img');
     modalCloseButton.classList.add('mobile-modal-icon');
-    modalCloseButton.setAttribute('src', './images/modal/mobile-enabled.png');
+    modalCloseButton.setAttribute('src', './images/modal/closeModal.png');
     modalCloseButton.setAttribute('alt', `mobile work${projectData[i].id} image`);
     modalCloseButton.addEventListener('click', () => {
       dialog.close();
