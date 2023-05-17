@@ -78,6 +78,98 @@ for (let i = 0; i < projectData.length; i += 1) {
   const button = document.createElement('button');
   button.classList.add('btn-primary-outline');
   button.innerText = 'See Project';
+  button.addEventListener('click', () => {
+    const dialog = document.createElement('dialog');
+    dialog.classList.add('project-modal');
+    dialog.setAttribute('open', '');
+    dialog.setAttribute('id', 'modal');
+    const modalHeader = document.createElement('div');
+    modalHeader.classList.add('mobile-modal-header');
+    const modalHeading = document.createElement('h3');
+    modalHeading.classList.add('modal-mobile-heading');
+    modalHeading.innerText = projectData[i].name;
+    const modalCloseButton = document.createElement('img');
+    modalCloseButton.classList.add('mobile-modal-icon');
+    modalCloseButton.setAttribute('src', './images/modal/mobile-enabled.png');
+    modalCloseButton.setAttribute('alt', `mobile work${projectData[i].id} image`);
+    modalHeader.appendChild(modalHeading);
+    modalHeader.appendChild(modalCloseButton);
+    dialog.appendChild(modalHeader);
+    const modalList = document.createElement('ul');
+    modalList.classList.add('project-experience');
+    for (let q = 0; q < projectData[i].project_experience.length; q += 1) {
+      const modalListItem = document.createElement('li');
+      if (q === 0) {
+        modalListItem.classList.add('first-list');
+        modalListItem.textContent = projectData[i].project_experience[q];
+      } else {
+        modalListItem.classList.add('other-list');
+        modalListItem.textContent = projectData[i].project_experience[q];
+      }
+      modalList.appendChild(modalListItem);
+    }
+    const modalPicture = document.createElement('picture');
+    modalPicture.classList.add('modal-picture');
+    const modalImg = document.createElement('img');
+    modalImg.classList.add('m-modal-image');
+    modalImg.setAttribute('src', projectData[i].image_mobile);
+    modalImg.setAttribute('alt', `mobile work${projectData[i].id} image`);
+    modalPicture.appendChild(source1);
+    modalPicture.appendChild(source2);
+    modalPicture.appendChild(modalImg);
+    const modalContent = document.createElement('div');
+    modalContent.classList.add('modal-content');
+    const modalDesc = document.createElement('p');
+    modalDesc.classList.add('m-modal-desc');
+    modalDesc.innerText = projectData[i].modal_data.desc;
+    const modalRightContent = document.createElement('div');
+    modalRightContent.classList.add('modal-right-content');
+    const modalLanguages = document.createElement('ul');
+    modalLanguages.classList.add('m-modal-lang');
+    for (let x = 0; x < projectData[i].tech_stack.length; x += 1) {
+      const modalLangList = document.createElement('li');
+      modalLangList.classList.add('m-lang-list');
+      modalLangList.innerText = projectData[i].tech_stack[x];
+      modalLanguages.appendChild(modalLangList);
+    }
+    const hr = document.createElement('hr');
+    const modalLinks = document.createElement('div');
+    modalLinks.classList.add('m-modal-links');
+    const modalButtonOne = document.createElement('button');
+    modalButtonOne.classList.add('m-modal-btn');
+    const modalDetailOne = document.createElement('p');
+    modalDetailOne.innerText = 'See live';
+    const modalSpanOne = document.createElement('span');
+    const spanOneImg = document.createElement('img');
+    spanOneImg.classList.add('m-modal-icon');
+    spanOneImg.setAttribute('src', './images/IconExport.png');
+    const modalButtonTwo = document.createElement('button');
+    modalButtonTwo.classList.add('m-modal-btn');
+    const modalDetailTwo = document.createElement('p');
+    modalDetailTwo.innerText = 'See source';
+    const modalSpanTwo = document.createElement('span');
+    const spanTwoImg = document.createElement('img');
+    spanTwoImg.setAttribute('src', './images/IconGitHub.png');
+    spanTwoImg.classList.add('m-modal-icon');
+    modalSpanTwo.appendChild(spanTwoImg);
+    modalButtonTwo.appendChild(modalDetailTwo);
+    modalButtonTwo.appendChild(modalSpanTwo);
+    modalSpanOne.appendChild(spanOneImg);
+    modalButtonOne.appendChild(modalDetailOne);
+    modalButtonOne.appendChild(modalSpanOne);
+    modalLinks.appendChild(modalButtonOne);
+    modalLinks.appendChild(modalButtonTwo);
+    modalRightContent.appendChild(modalLanguages);
+    modalRightContent.appendChild(hr);
+    modalRightContent.appendChild(modalLinks);
+    modalContent.appendChild(modalDesc);
+    modalContent.appendChild(modalRightContent);
+    dialog.appendChild(modalList);
+    dialog.appendChild(modalPicture);
+    dialog.appendChild(modalContent);
+    cardDiv.appendChild(dialog);
+    dialog.show();
+  });
   cardContent.appendChild(cardTitle);
   cardContent.appendChild(projectExperience);
   cardContent.appendChild(projectSummary);
