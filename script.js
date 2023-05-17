@@ -91,6 +91,10 @@ for (let i = 0; i < projectData.length; i += 1) {
     modalCloseButton.classList.add('mobile-modal-icon');
     modalCloseButton.setAttribute('src', './images/modal/mobile-enabled.png');
     modalCloseButton.setAttribute('alt', `mobile work${projectData[i].id} image`);
+    modalCloseButton.addEventListener('click', () => {
+      dialog.close();
+      cardDiv.removeChild(dialog);
+    });
     modalHeader.appendChild(modalHeading);
     modalHeader.appendChild(modalCloseButton);
     dialog.appendChild(modalHeader);

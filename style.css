@@ -376,14 +376,9 @@ header {
 
 /* mobile project modal */
 dialog::backdrop {
- backdrop-filter: blur(5px);
-  background-color: rgba(255, 255, 255, 0.7);
-  }
-
-/* .projects-modal-open {
-  filter: blur(5px);
-  pointer-events: none;
-} */
+  backdrop-filter: blur(5px);
+  /* background-color: rgba(255, 255, 255, 0.7); */
+}
 
 .project-modal {
   margin: 3%;
@@ -392,8 +387,6 @@ dialog::backdrop {
   padding: 0 3.5%;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
-  /* backdrop-filter: blur(5px);
-  background-color: rgba(255, 255, 255, 0.7); */
 }
 
 .mobile-modal-header {
@@ -467,6 +460,7 @@ dialog::backdrop {
   flex-direction: row;
   justify-content: space-between;
   margin-top: 4%;
+  margin-bottom: 7%;
 }
 
 .m-modal-btn {
@@ -478,8 +472,10 @@ dialog::backdrop {
   line-height: 20px;
   font-weight: 500;
   border-radius: 8px;
-  margin-bottom: 12px;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
 }
 
 .m-modal-icon {

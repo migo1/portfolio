@@ -12,8 +12,8 @@ const projectData = [
         'https://www.youtube.com/watch?v=9EcjWd-O4jI&ab_channel=TechnotronicVEVO',
     link_repo: 'https://github.com/migo1/portfolio',
     modal_data: {
-      desc: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy textever since the 1500s, when an unknown printer took a galley of typeand scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent.',
       languages: ['html', 'css', 'java script', 'Ruby', 'Bootstrap'],
+      desc: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy textever since the 1500s, when an unknown printer took a galley of typeand scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent.',
     },
   },
   {
@@ -29,6 +29,7 @@ const projectData = [
         'https://www.youtube.com/watch?v=9EcjWd-O4jI&ab_channel=TechnotronicVEVO',
     link_repo: 'https://github.com/migo1/portfolio',
     modal_data: {
+      languages: ['html', 'css', 'java script', 'Ruby', 'Bootstrap'],
       desc: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy textever since the 1500s, when an unknown printer took a galley of typeand scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent.',
     },
   },
@@ -45,6 +46,7 @@ const projectData = [
         'https://www.youtube.com/watch?v=9EcjWd-O4jI&ab_channel=TechnotronicVEVO',
     link_repo: 'https://github.com/migo1/portfolio',
     modal_data: {
+      languages: ['html', 'css', 'java script', 'Ruby', 'Bootstrap'],
       desc: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy textever since the 1500s, when an unknown printer took a galley of typeand scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent.',
     },
   },
@@ -61,6 +63,7 @@ const projectData = [
         'https://www.youtube.com/watch?v=9EcjWd-O4jI&ab_channel=TechnotronicVEVO',
     link_repo: 'https://github.com/migo1/portfolio',
     modal_data: {
+      languages: ['html', 'css', 'java script', 'Ruby', 'Bootstrap'],
       desc: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy textever since the 1500s, when an unknown printer took a galley of typeand scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent.',
     },
   },
