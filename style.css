@@ -375,15 +375,15 @@ header {
 }
 
 /* mobile project modal */
-/* dialog::backdrop {
-    filter: blur(5px);
-  } */
+dialog::backdrop {
+ backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 0.7);
+  }
 
 /* .projects-modal-open {
   filter: blur(5px);
   pointer-events: none;
 } */
-
 
 .project-modal {
   margin: 3%;

@@ -81,7 +81,6 @@ for (let i = 0; i < projectData.length; i += 1) {
   button.addEventListener('click', () => {
     const dialog = document.createElement('dialog');
     dialog.classList.add('project-modal');
-    dialog.setAttribute('open', '');
     dialog.setAttribute('id', 'modal');
     const modalHeader = document.createElement('div');
     modalHeader.classList.add('mobile-modal-header');
@@ -168,7 +167,7 @@ for (let i = 0; i < projectData.length; i += 1) {
     dialog.appendChild(modalPicture);
     dialog.appendChild(modalContent);
     cardDiv.appendChild(dialog);
-    dialog.show();
+    dialog.showModal();
   });
   cardContent.appendChild(cardTitle);
   cardContent.appendChild(projectExperience);
