@@ -163,7 +163,6 @@ window.addEventListener('DOMContentLoaded', () => {
       modalCloseButton.setAttribute('alt', `mobile work${projectData[i].id} image`);
       modalCloseButton.addEventListener('click', () => {
         dialog.close();
-        cardDiv.removeChild(dialog);
       });
       modalHeader.appendChild(modalHeading);
       modalHeader.appendChild(modalCloseButton);
