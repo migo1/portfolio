@@ -2,16 +2,16 @@ window.addEventListener('DOMContentLoaded', () => {
   const projectData = [
     {
       id: 0,
-      name: 'Tonic',
+      name: 'Music Festival',
       summary:
-        'A daily selection of privately personalized reads; no accounts or sign-ups required .',
-      image_mobile: 'images/work1.png',
-      image_desk: 'images/desktop/work1.png',
+        'A website that displays the events and finalist of a music festival.',
+      image_mobile: 'images/music-fest.png',
+      image_desk: 'images/desktop/music-fest.png',
       tech_stack: ['html', 'css', 'java script'],
       project_experience: ['CANOPY', 'Back End Dev', 2015],
       link_live:
-        'https://www.youtube.com/watch?v=9EcjWd-O4jI&ab_channel=TechnotronicVEVO',
-      link_repo: 'https://github.com/migo1/portfolio',
+        'https://migo1.github.io/capstone-1/',
+      link_repo: 'https://github.com/migo1/capstone-1',
       modal_data: {
         languages: ['html', 'css', 'java script', 'Ruby', 'Bootstrap'],
         desc: 'Lorem Ipsum is simply dummy text of the printing industry.unknown printer took a galley of typeand scrambled it to make a type. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent.',
